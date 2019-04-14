@@ -1,9 +1,19 @@
-<mat-list>
-  <h3 mat-subheader>Folders</h3>
-  <mat-list-item>
-    <mat-icon mat-list-icon>folder</mat-icon>
-    <h4 mat-line>sdsdsdsd</h4>
-    <p mat-line> sdsdsdsdsdsd </p>
+<mat-list class="pcp-list">
+  <mat-list-item matRipple>
+    <div class="avatar" mat-list-icon>
+      <img [src]="user.img" [alt]="user.name">
+    </div>
+    <h4 mat-line>{{user.name}}</h4>
+    <p mat-line>
+      <span>id: {{user.id}}</span> 
+      <span>{{user.username}}</span> 
+    </p>
+
+    <div class="badge">
+      <mat-icon>$</mat-icon>
+      <h2>Pagar</h2>
+      <img src="assets/svg/down.svg#arrow-right" alt="Seta Direita" class="arrow-left">
+    </div>
   </mat-list-item>
   <mat-divider></mat-divider>
   </mat-list>

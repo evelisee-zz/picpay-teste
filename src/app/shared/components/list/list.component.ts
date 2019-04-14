@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { UserInfoModel } from 'src/core/model/userInfo-model';
 
 @Component({
   selector: 'pcp-list',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
+
+  @Input() user: UserInfoModel[];
 
   constructor() { }
 

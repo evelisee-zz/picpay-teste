@@ -1,0 +1,64 @@
+@import 'src/theme/app';
+
+.pcp-list{
+    background-image: linear-gradient(to right, $das, $dusk);
+    cursor: pointer;
+    padding: 0!important;
+
+    .avatar.mat-list-icon{
+        border-radius: 100%;
+        width: 50px!important;
+        height: 50px!important;
+    }
+    .avatar img{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        border:1px solid white;
+    }
+
+    h4{
+        @include font-bold;
+        color:white;
+        font-size: 15px;
+    }
+
+    span{
+        @include font;
+        color:white;
+        font-size: 12px;
+        padding-right: 6px;
+    }
+
+    .badge {
+        display: flex;
+        align-items: center;
+        width: 175px;
+        justify-content: space-between;
+
+        mat-icon{
+            background-image: linear-gradient(to right, $duck-egg-blue, $duck-soft);
+            @include font-bold;
+            color:$dusk;
+            font-size: 16px;
+            padding: 5px 8px;
+            border-radius: 100%;
+        }
+
+        h2{
+            @include font-bold;
+            color:white;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+
+        .arrow-left{
+            width: 23px;
+        }
+
+    }
+
+    .mat-divider{
+        border-top-color: white;
+    }
+}

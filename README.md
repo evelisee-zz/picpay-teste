@@ -22,9 +22,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 This project contains:
 
-- Bootstrap
-- Angular 7
+- Bootstrap Grid
 - Angular Material
+- Lodash
 
 ## Further help
 

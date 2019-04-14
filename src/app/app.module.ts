@@ -8,15 +8,15 @@ import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from './material.module';
-import { MatIconModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MaterialModule,
     RouterModule,
-    MatIconModule,
     AppRoutingModule,
     PagesModule,
     SharedModule,

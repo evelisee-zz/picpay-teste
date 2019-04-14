@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  version: '1.0.0',
+  serverUrl: 'http://careers.picpay.com/tests/mobdev',
+  defaultLanguage: 'pt-BR',
+  supportedLanguages: [
+    'pt-BR',
+    'en-US'
+  ]
 };
 
 /*
