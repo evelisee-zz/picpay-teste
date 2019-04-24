@@ -3,11 +3,15 @@ import { CommonModule } from '@angular/common';
 import { HeaderBarComponent } from './header-bar/header-bar.component';
 import { ListComponent } from './list/list.component';
 import { MaterialModule } from 'src/app/material.module';
+import { ButtonComponent } from './button/button.component';
+import { InputNumberComponent } from './input-number/input-number.component';
 
 @NgModule({
   declarations: [
     HeaderBarComponent,
     ListComponent,
+    ButtonComponent,
+    InputNumberComponent,
   ],
   imports: [
     CommonModule,
@@ -15,7 +19,9 @@ import { MaterialModule } from 'src/app/material.module';
   ],
   exports: [
     HeaderBarComponent,
-    ListComponent
+    ListComponent,
+    ButtonComponent,
+    InputNumberComponent
   ],
 })
 export class ComponentsModule { }

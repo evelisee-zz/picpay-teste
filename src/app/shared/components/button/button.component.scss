@@ -1,0 +1,20 @@
+@import 'src/theme/app';
+
+::ng-deep{
+    pcp-button{
+    width:100%;
+    display: block;
+    }
+}
+.pcp-button{
+    @include font-bold;
+    background-image: linear-gradient(to right, $duck-egg-blue, $duck-soft);
+    color:$dusk-two;
+    text-align: center;
+    width:100%;
+    display: block;
+    padding:8px;
+    border-radius: 25px;
+    text-transform:uppercase;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}

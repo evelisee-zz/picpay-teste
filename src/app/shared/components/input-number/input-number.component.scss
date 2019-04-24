@@ -1,0 +1,16 @@
+@import 'src/theme/app';
+
+.input-value{
+    border:0;
+    outline:none;
+    border-bottom: 2px solid $dusk-two;
+    font-size: 43px;
+    text-align: center;
+    width: 300px;
+    color: $white-two;
+    @include font-input;
+}
+
+.input-value::placeholder{
+    color: $white-two; 
+}

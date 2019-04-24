@@ -4,6 +4,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { UserListComponent } from './user-list/user-list.component';
 import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../material.module';
+import { PaymentComponent } from './dialog/payment/payment.component';
 
 @NgModule({
   imports: [
@@ -14,10 +15,13 @@ import { MaterialModule } from '../material.module';
   ],
   exports: [
     AppRoutingModule,
-    UserListComponent
+    UserListComponent,
+    PaymentComponent
   ],
   declarations: [
-    UserListComponent
-  ]
+    UserListComponent,
+    PaymentComponent
+  ],
+  entryComponents: [PaymentComponent]
 })
 export class PagesModule { }

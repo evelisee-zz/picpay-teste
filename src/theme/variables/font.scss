@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
 $font: 'Roboto';
+$font-nunito: 'Nunito Sans';
 $font-regular: 400;
-$font-medium: 6500;
+$font-medium: 650;
 $font-bold: 700;
 
 @mixin font{
@@ -18,4 +20,9 @@ $font-bold: 700;
 @mixin font-bold{
     font-family: $font !important;
     font-weight: $font-bold !important;
+}
+
+@mixin font-input{
+  font-family: $font-nunito!important;
+  font-weight: normal !important;
 }

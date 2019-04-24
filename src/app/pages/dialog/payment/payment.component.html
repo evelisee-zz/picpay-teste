@@ -1,0 +1,31 @@
+<div class="holder pcp-dialog">
+  <div class="header-dialog">
+    <h1>Pagamento para <span>{{data.name}}</span></h1>
+    <button><img src="assets/svg/close.svg#close" alt="Seta Direita" class="arrow-left"></button>
+  </div>
+
+  <div class="container-padding">
+    <div mat-dialog-content>
+
+      <div class="center-container">
+        <mat-list>
+            <mat-list-item>
+              <div class="avatar" mat-list-icon>
+                <img [src]="data.img" [alt]="data.name">
+              </div>
+              <h4 mat-line>{{data.name}}</h4>
+              <p mat-line class="info-user">
+                <span>id: {{data.id}}</span> 
+                <span>{{data.username}}</span> 
+              </p>
+            </mat-list-item>        
+        </mat-list>
+
+        <pcp-input-number></pcp-input-number>
+      </div>
+    </div>
+    <div mat-dialog-actions>
+      <pcp-button label="Pagar"></pcp-button>
+    </div>
+  </div>
+</div>

@@ -24,6 +24,7 @@ This project contains:
 
 - Bootstrap Grid
 - Angular Material
+- Angular Material Icons
 - Lodash
 
 ## Further help

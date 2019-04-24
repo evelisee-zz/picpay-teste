@@ -1,3 +1,4 @@
+@import '~material-design-icons/iconfont/material-icons.css';
 @import "theme/app.scss";
 
 html, body { 
@@ -12,4 +13,7 @@ html, body {
 .holder-scroll{
     height: calc(100% - 10px);
     overflow: scroll;
+}
+.mat-dialog-container{
+    padding:0!important;
 }
