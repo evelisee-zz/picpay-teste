@@ -1,7 +1,7 @@
 <div class="holder pcp-dialog">
   <div class="header-dialog">
     <h1>Pagamento para <span>{{data.name}}</span></h1>
-    <button><img src="assets/svg/close.svg#close" alt="Seta Direita" class="arrow-left"></button>
+    <button><img src="assets/svg/close.svg#close" alt="fechar modal" class="arrow-left"></button>
   </div>
 
   <div class="container-padding">
@@ -21,11 +21,22 @@
             </mat-list-item>        
         </mat-list>
 
-        <pcp-input-number></pcp-input-number>
+        <pcp-input-number class="payment-input"></pcp-input-number>
       </div>
-    </div>
-    <div mat-dialog-actions>
-      <pcp-button label="Pagar"></pcp-button>
+
+      <div class="center-container border-top">
+        
+        <div class="holder-credit-card">
+          <img src="assets/svg/alert.svg#alert" alt="ícone de alerta">
+
+          <div class="flex">
+            <p>Nenhum cartão de crédito cadastrado</p>
+            <button class="config-card">Cadastrar Agora</button>
+          </div>
+        </div>
+
+        <pcp-button label="Pagar"></pcp-button>
+      </div>
     </div>
   </div>
 </div>

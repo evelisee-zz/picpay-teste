@@ -7,6 +7,10 @@ html, body {
     padding:0;
     overflow: hidden;
 }
+
+button{
+    outline: none;
+}
 .container{
     padding: 0;
 }
@@ -16,4 +20,5 @@ html, body {
 }
 .mat-dialog-container{
     padding:0!important;
+    overflow: hidden!important;
 }

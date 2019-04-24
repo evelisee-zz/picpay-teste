@@ -30,15 +30,12 @@
     }
 
     .center-container{
-        width: 650px;
+        width: 600px;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
-
-    mat-list{
-        margin-bottom: 20px;
     }
 
     .avatar.mat-list-icon{
@@ -61,9 +58,6 @@
         color: $dusk-two;
         font-size: 28px;
     }
-
-    
- 
     .info-user{
         margin-top:5px;
         
@@ -78,4 +72,51 @@
     .container-padding{
         padding:20px;
     }
+
+    .payment-input{
+        margin:35px 0;
+    }
+
+    .border-top{
+        border-top:1px solid $white-two;
+    }
+
+
+    .holder-credit-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+
+        img{
+            margin-right: 10px;
+        }
+
+        p,
+        button{
+            @include font;
+            color: $medium-pink;
+            margin: 0;
+        }
+
+        .config-card{
+            @include font-bold;
+            border:0;
+            padding:0;
+            background: transparent;
+            text-decoration: underline;
+            font-size: 16px;
+            cursor:pointer;
+        }
+    }
+
+    pcp-button{
+        margin-bottom: 20px;
+    }
+
+    button{
+        cursor:pointer;
+    }
+
+    
 }
