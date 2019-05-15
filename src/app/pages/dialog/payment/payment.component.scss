@@ -1,42 +1,5 @@
 @import 'src/theme/app';
 .pcp-dialog{
-    .holder{overflow: hidden;}
-
-    .header-dialog{
-        background-color: $dusk-two;
-        min-height: 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-
-        h1{
-            @include font-bold;
-            color:white;
-            font-size:15px;
-            margin: 0;
-            span{color: $duck-soft}
-        }
-
-        button{
-            border: 0;
-            background: transparent;
-
-            mat-icon{
-                @include font;
-                color:white;
-            }
-        }
-    }
-
-    .center-container{
-        width: 600px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
 
     .avatar.mat-list-icon{
         border-radius: 100%;
@@ -109,14 +72,5 @@
             cursor:pointer;
         }
     }
-
-    pcp-button{
-        margin-bottom: 20px;
-    }
-
-    button{
-        cursor:pointer;
-    }
-
     
 }

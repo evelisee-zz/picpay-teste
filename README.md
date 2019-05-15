@@ -26,6 +26,7 @@ This project contains:
 - Angular Material
 - Angular Material Icons
 - Lodash
+- Ng Currency Mask
 
 ## Further help
 

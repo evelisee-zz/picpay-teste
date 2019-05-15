@@ -21,7 +21,7 @@
             </mat-list-item>        
         </mat-list>
 
-        <pcp-input-number class="payment-input"></pcp-input-number>
+        <pcp-input-number class="payment-input" [p-value]="valueNumber" (p-change)="getValue($event)"></pcp-input-number>
       </div>
 
       <div class="center-container border-top">
@@ -31,11 +31,11 @@
 
           <div class="flex">
             <p>Nenhum cartão de crédito cadastrado</p>
-            <button class="config-card">Cadastrar Agora</button>
+            <button class="config-card" (click)="openCreditCardConfig()">Cadastrar Agora</button>
           </div>
         </div>
 
-        <pcp-button label="Pagar"></pcp-button>
+        <pcp-button label="Pagar" (click)="console()"></pcp-button>
       </div>
     </div>
   </div>

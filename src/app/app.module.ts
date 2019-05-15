@@ -9,6 +9,8 @@ import { PagesModule } from './pages/pages.module';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
+import { CurrencyMaskModule } from "ng2-currency-mask";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [

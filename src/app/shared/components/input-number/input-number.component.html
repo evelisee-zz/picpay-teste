@@ -1,1 +1,7 @@
-<input type="text" class="input-value" placeholder="R$0,00">
+<input type="text" 
+class="input-value" 
+[ngModel]="value" 
+(ngModelChange)="changeInput($event)"
+placeholder="R$0,00" 
+currencyMask 
+[options]="{ prefix: 'R$ ', align: 'center', thousands: '.', decimal: ',' }">
